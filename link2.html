@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> The Shawshank Redemption </title>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" type = "text/css" href = "Project_c.css">
+    <script type ="text/javascript" src = "link2_j.js"> </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <p class = "date"></p>
+    <div class = "dropdown">
+     <button class = "dropbtn">Personal</button>
+     <div class = "dropdown-content">
+       <a href = "#detaliat ">Roluri</a>
+       <a href = "#detaliat1">Distributie</a>
+       <a href = "#detaliat2">Regizor</a>
+       <a href = "#detaliat3">Scenarist</a>
+       <a href = "#detaliat4">Producator</a>
+       <a href = "#info"> Viata personala </a>
+       <a href = "#info1"> Ocupatii </a>
+       <a href = "#qa">Scurta Intrebare </a>
+     </div>
+     </div>
+     <div class="rsz"></div>
+     <ul class = "all">
+       <h4 id = "detaliat1"><strong>Distributie</strong>
+         <ul class = "a">
+           <li>Tim Robbins</li>
+           <li>Morgan Freeman</li>
+           <li>Bob Gunton</li>
+           <li>Clancy Brown</li>
+           <li>William Sadler</li>
+           <li>Gil Bellows</li>
+           <li>James Whitmore</li>
+         </ul>
+       </h4>
+       <h4 id = "detaliat2"><strong>Regizor</strong>
+         <ul class = "a">
+           <li>Frank Darabont</li>
+         </ul>
+       </h4>
+       <h4 = "detaliat3"><strong>Scenarist</strong>
+         <ul class = "a">
+           <li>Frank Darabont</li>
+           <li>Stephen King</li>
+         </ul>
+       </h4>
+       <h4 id = "detaliat4"><strong>Producator</strong>
+         <ul class = "a">
+           <li>Niki Marvin</li>
+         </ul>
+       </h4>
+     </ul>
+     <table>
+      <tr class = "impar">
+       <th> IMDB </th>
+       <th class = "b" id = "detaliat">Roluri</th>
+      </tr>
+      <tr class = "par">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0000209?ref_=tt_cl_t1"><img src="tim.jpg" height = "50" width = "auto" alt = "Andy Dufrense"></a></td>
+       <td>Tim Robbins : Andy Dufrense</td>
+      </tr>
+      <tr class = "impar">
+       <td><a href ="https://www.imdb.com/title/tt0111161/characters/nm0000151?ref_=tt_cl_t2"> <img src="morg.jpg" height = "50" width = "auto" alt = "Ellis Boyd Redding"></a></td>
+       <td>Morgan Freeman : Ellis Boyd Redding</td>
+      </tr>
+      <tr class = "par">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0348409?ref_=tt_cl_t3"><img src="bob.jpg" height = "50" width = "auto" alt = "Warden Samuel Norton"></a></td>
+       <td>Bob Gunton : Warden Samuel Norton </td>
+      </tr>
+      <tr class = "impar">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0000317?ref_=tt_cl_t5"><img src="clan.jpg" height = "50" width = "auto" alt = "Captain Byron Hadley"></a></td>
+       <td>Clancy Brown : Captain Byron Hadley</td>
+      </tr>
+      <tr class = "par">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0006669?ref_=tt_cl_t4"><img src="hey.jpg" height = "50" width = "auto" alt = "Heywood"></a></td>
+       <td>Wllliam Sadler : Heywood</td>
+      </tr>
+      <tr class = "impar">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0004743?ref_=tt_cl_t6"><img src="tom.jpg" height = "50" width = "auto" alt = "Tommy Williams"></a></td>
+       <td>Gil Bellows : Tommy Williams</td>
+      </tr>
+      <tr class = "par">
+       <td><a href = "https://www.imdb.com/title/tt0111161/characters/nm0926235?ref_=tt_cl_t8"><img src="hat.jpg" height = "50" width="auto" alt = "Brooks Hatlen"></a></td>
+       <td>James Whitmore : Brooks Hatlen</td>
+      </tr>
+     </table>
+     <div>
+     <h3 class = "add"><strong>DESPRE ACTORI</strong></h3>
+     <section>
+       <h4 id = "info"><strong> Viata personala</strong> </h4>
+       <form>
+         <input type = "button" class = "firstButton" value = "Click pentru a afla despre viata personala a unui actor!">
+       </form>
+       <p id = "name"></p>
+       <p id = "story"></p>
+     </section>
+     <section>
+       <h4 id = "info1"><strong>Ocupatii</strong></h4>
+       <form>
+         <input type = "button" class = "firstButton" value = "Click pentru a afla ocupatiile unui actor!">
+       </form>
+       <p id = "name1"></p>
+       <p id = "story1"></p>
+     </section>
+     <form class = "picture"  action = "/action_page.php">
+       <h4 id = "qa">Care este actorul tau preferat ?</h4>
+       <input type = "radio" name = "fav" value = "tim.jpg">Tim Robbins<br>
+       <input type = "radio" name = "fav" value = "morg.jpg">Morgan Freeman<br>
+       <input type = "radio" name = "fav" value = "bob.jpg">Bob Guntan<br>
+       <input type = "radio" name = "fav" value = "clan.jpg">Clancy Brown<br>
+       <input type = "radio" name = "fav" value = "hey.jpg">William Sadler<br>
+       <input type = "radio" name = "fav" value = "tom.jpg">Gil Bellows<br>
+       <input type = "radio" name = "fav" value = "hat.jpg">James Whitmore<br>
+     </form>
+     <img class = "showPicture" src="" alt="">
+     <form action = "/action_page.php">
+       <h4 id = "nota">Ai recomanda acest film?</h4>
+       <input type = "checkbox" id = "raspuns1" value = "Da"> Da<br>
+       <input type = "checkbox" id = "raspuns2" value = "Nu"> Nu<br>
+     </form>
+       <p id = "raspuns3"></p>
+    </div>
+    <div id = "ad">
+      <span class = "closebtn">&times;</span><br><br>
+      <a href = "https://stirileprotv.ro/show-buzz/entertainment/tim-robbins-la-festivalul-de-teatru-de-la-sibiu-actorul-de-oscar-ocupa-de-aceasta-data-scaunul-de-regizor.html">Tim Robbins, la Festivalul de Teatru din Sibiu, in calitate de regizor. Ce a scris actorul de Oscar pe Twitter despre Romania!</a>
+      <p>Pentru a inchide reclama, apasati pe X.</p>
+    </div>
+    <a href = "http://localhost:3000">APASA PENTRU HOME!</a>
+  </body>
+</html>

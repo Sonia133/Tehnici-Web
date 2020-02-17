@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+body,html{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+h1,h4{
+  color: white;
+  text-align: center;
+}
+
+p{
+  font-family: monospace;
+  font-size : 13px;
+  padding: 0 15%;
+}
+h4{
+  margin-bottom: 38px;
+}
+.intr{
+  text-align: center;
+  font-family: Arial;
+  color: white;
+  text-decoration-style: solid;
+}
+*{
+box-sizing: border-box;
+}
+
+.flex-parent{
+width:100%;
+display: flex;
+justify-content: center;
+align-items: stretch;
+flex-wrap: wrap;
+height: 100%;
+}
+
+.box{
+height: 50%;
+width: 100%;
+text-align: center;
+justify-content: center;
+}
+
+.big{
+background-color: #1abc9c;
+width:100%;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.small{
+background-color: black;
+border-top: 1px solid black;
+border-bottom: 1px solid black;
+width: 25%;
+
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.bordL{
+  border-left: 1px solid black;
+}
+.bordR{
+  border-right: 1px solid black;
+}
+
+a{
+  text-decoration: none;
+  color: lightpink;
+  transform: skewX(10deg);
+}
+
+.anc{
+    color: white;
+    text-decoration: none;
+}
+
+.small:hover{
+  background-color: white;
+}
+
+.small:hover .anc{
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .big{
+    background-color: lightblue;
+  }
+  .intr,.anc{
+    color: #660066;
+  }
+  .small{
+    background-color: lightgrey;
+    width: 100%;
+    border: 1px solid black;
+    height: 12.5%;
+  }
+  p,h1,h4{
+    margin-top: 30px;
+  }
+  h1,h4{
+    color: #000066;
+  }
+  a{
+    color: black;
+  }
+  .flex-parent{
+    align-items: flex-start;
+  }
+}

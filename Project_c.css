@@ -1,0 +1,192 @@
+body,
+html{
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+.a{
+  visibility:hidden;
+}
+a{
+  text-decoration: none;
+}
+h4:hover .a{
+  visibility: visible;
+  display: inline-block;
+}
+table,td,tr,th{
+  border: 2px black;
+  border-style: groove;
+  border-collapse: collapse;
+}
+table img{
+  border-radius: 50%;
+}
+tr:nth-of-type(2n) {
+  background-color: #ccffcc;
+}
+tr:nth-of-type(2n+1) {
+  background-color: #ffe6f3;
+}
+.par:hover,
+.impar:hover{
+  background-color: lightblue !important;
+}
+header h1 , header h4 {
+  text-align: center;
+}
+header h4 {
+  margin-bottom: 100px;
+}
+h1,h2,h3,h4{
+  color: #000066;
+}
+body {
+  background-color: lightgrey;
+}
+figure{
+  display: inline-block;
+  border: 2px solid;
+  border-radius : 10px;
+  align-content: space-between;
+  width: 25%;
+  transition: width 3s;
+}
+figure img{
+  width:100%;
+  border-radius: 10px;
+}
+figure:hover{
+  width: 500px;
+}
+.imgg{
+  width : 25%;
+  height: auto;
+}
+
+p{
+  font-family: monospace;
+  font-size : 13px;
+}
+
+.add{
+  text-align: center;
+}
+figcaption{
+  text-align: center;
+}
+.dropbtn {
+  background-color: #3385ff;
+  color: white;
+  padding: 12px;
+  font-size: 0.8em;
+  border: 1px solid blue;
+  cursor: grab;
+  margin-bottom: 0px;
+  z-index: 1;
+}
+#detaliat1{
+  margin-top: 150px;
+}
+#detaliat4{
+  margin-bottom: 150px;
+}
+.dropdown {
+  z-index: 10;
+  position: fixed;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: lightgrey;
+  border-bottom: 1px solid #555;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: black;
+}
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #ffcccc;
+  }
+  .dropbtn {
+    background-color:red;
+    border: solid darkred;
+  }
+  figure:hover{
+    width: 250px;
+  }
+}
+.alw_top{
+  position: fixed;
+}
+button.but{
+  border-radius: 10px;
+  width: 95%;
+  background-color: lightblue;
+}
+.rsz{
+  margin-top: 100px;
+}
+
+@keyframes move {
+  from{left: 0px;}
+  to{left: 50px;}
+}
+
+#pozev, #pozen {
+  position: relative;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  z-index: -1;
+}
+
+.firstButton, #raspuns1, #raspuns2{
+  background-color: #ffe6f3;
+  display: inline-block;
+  color: purple;
+  position: relative;
+  left: 10px;
+}
+
+.secondButton {
+  background-color: #ccffcc;
+  display: inline-block;
+  color: purple;
+  position: relative;
+  left: 10px;
+}
+
+#name, #name1, #story, #story1{
+  position: relative;
+  left: 10px;
+}
+
+.date {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
